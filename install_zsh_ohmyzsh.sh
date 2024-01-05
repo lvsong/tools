@@ -15,7 +15,7 @@ if [ -z "$(command -v zsh)" ]; then
     if [ "$OS" == "ubuntu" ] || [ "$OS" == "debian" ]; then
         sudo apt update
         sudo apt install zsh -y
-    elif [ "$OS" == "centos" ] || [ "$OS" == "anolis" ]; then
+    elif [ "$OS" == "centos" ] || [ "$OS" == "anolis" ] || [ "$OS" == "alinux" ]; then
         sudo yum install zsh -y
     else
         echo "不支持的操作系统。"
